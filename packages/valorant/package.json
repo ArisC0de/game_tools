@@ -1,14 +1,13 @@
 {
-  "name": "@coming/ui",
+  "name": "valorant",
   "version": "0.0.1",
-  "module": "index.tsx",
+  "module": "index.ts",
   "type": "module",
   "scripts": {
-    "check-types": "tsc --noEmit"
+    "check-types":"tsc --noEmit"
   },
   "devDependencies": {
-    "@types/bun": "latest",
-    "rollup": "^4.20.0"
+    "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

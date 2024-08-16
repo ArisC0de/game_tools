@@ -173,9 +173,3 @@ dist
 
 # Finder (MacOS) folder config
 .DS_Store
-
-# turborepo
-.turbo
-
-# vscode
-.vscode
