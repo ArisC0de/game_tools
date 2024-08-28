@@ -3,27 +3,17 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "turbo dev",
-    "build": "turbo build",
-    "check-types": "turbo check-types",
-    "commit": "cz"
+    "dev":"turbo dev",
+    "build":"turbo build",
+    "check-types":"turbo check-types"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.4.1",
-    "@commitlint/config-conventional": "^19.4.1",
     "@types/bun": "latest",
-    "commitizen": "^4.3.0",
-    "cz-git": "^1.9.4",
     "turbo": "^2.0.14"
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-git"
-    }
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "workspaces": ["packages/*"],
+  "workspaces":["packages/*"],
   "packageManager": "bun@1.1.18"
 }
