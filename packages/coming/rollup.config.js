@@ -1,7 +1,18 @@
+import resolve from '@rollup/plugin-node-resolve'
+import typescript from 'rollup-plugin-typescript2'
+
 export default {
-  input: 'src/main.js',
-  output: {
-    file: 'bundle.js',
-    format: 'cjs',
+  input: {
+    Button: 'src/components/ui/button.tsx',
   },
+  output: {
+    entryFileNames: '[name].tsx',
+  },
+  plugins: [resolve(), typescript(
+    {
+      tsconfig: './tsconfig.json',
+      declaration: true,
+      declarationDir: 'dist',
+    },
+  )],
 }
