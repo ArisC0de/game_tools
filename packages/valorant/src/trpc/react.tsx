@@ -20,7 +20,7 @@ function getQueryClient() {
   return (clientQueryClientSingleton ??= createQueryClient())
 }
 
-const api = createTRPCReact<AppRouter>()
+export const api = createTRPCReact<AppRouter>()
 
 /**
  * Inference helper for inputs.
