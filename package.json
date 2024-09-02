@@ -1,10 +1,39 @@
 {
   "name": "game_tools",
   "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
+  "version": "0.0.1",
+  "packageManager": "bun@1.1.18",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "commit": "bun run lint && cz",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.27.3",
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "@eslint-react/eslint-plugin": "^1.12.2",
+    "@types/bun": "latest",
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.9.4",
+    "eslint": "^9.9.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.11",
+    "turbo": "^2.0.14"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }

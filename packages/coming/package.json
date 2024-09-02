@@ -1,11 +1,16 @@
 {
   "name": "@coming/ui",
-  "module": "index.tsx",
   "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
+  "version": "0.0.1",
+  "module": "index.tsx",
+  "scripts": {
+    "check-types": "tsc --noEmit"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "rollup": "^4.20.0"
   }
 }
