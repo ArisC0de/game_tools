@@ -9,8 +9,7 @@
     "check-types": "turbo check-types",
     "commit": "bun run lint && cz",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "prepare": "husky"
+    "lint:fix": "eslint . --fix"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
