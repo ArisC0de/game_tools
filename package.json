@@ -7,7 +7,7 @@
     "dev": "turbo dev",
     "build": "turbo build",
     "check-types": "turbo check-types",
-    "commit": "cz",
+    "commit": "bun run lint && cz",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky"
