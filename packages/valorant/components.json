@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "tailwind.config.ts",
+    "css": "src/styles/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "aliases": {
+    "components": "@tools/valorant/components",
+    "ui": "@shadcn/ui",
+    "lib": "@tools/valorant/lib",
+    "utils": "@tools/valorant/lib/utils",
+    "hooks": "@tools/valorant/hooks"
+  }
+}
