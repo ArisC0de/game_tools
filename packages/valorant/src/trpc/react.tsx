@@ -20,6 +20,7 @@ function getQueryClient() {
   return (clientQueryClientSingleton ??= createQueryClient())
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const api = createTRPCReact<AppRouter>()
 
 /**
