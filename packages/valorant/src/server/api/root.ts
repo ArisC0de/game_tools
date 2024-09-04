@@ -1,6 +1,8 @@
 import { postRouter } from '@tools/valorant/server/api/routers/post'
 import { createCallerFactory, createTRPCRouter } from '@tools/valorant/server/api/trpc'
 
+import { toolsRouter } from './routers/tools'
+
 /**
  * This is the primary router for your server.
  *
@@ -8,6 +10,7 @@ import { createCallerFactory, createTRPCRouter } from '@tools/valorant/server/ap
  */
 export const appRouter = createTRPCRouter({
   post: postRouter,
+  tools: toolsRouter,
 })
 
 // export type definition of API

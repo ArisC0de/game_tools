@@ -12,7 +12,7 @@
   },
   "aliases": {
     "components": "@tools/valorant/components",
-    "ui": "@shadcn/ui",
+    "ui": "@tools/valorant/components/ui",
     "lib": "@tools/valorant/lib",
     "utils": "@tools/valorant/lib/utils",
     "hooks": "@tools/valorant/hooks"

@@ -6,5 +6,6 @@ export default antfu({
     'no-console': [2, { allow: ['warn', 'error', 'debug'] }],
     'node/prefer-global/process': ['off', 0],
     'import/order': ['error', { 'newlines-between': 'always' }],
+    'react/no-duplicate-key': [0],
   },
 })
