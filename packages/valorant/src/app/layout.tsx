@@ -3,6 +3,7 @@ import '@tools/valorant/styles/globals.css'
 import { GeistSans } from 'geist/font/sans'
 import type { Metadata } from 'next'
 import { TRPCReactProvider } from '@tools/valorant/trpc/react'
+import { ThemeProvider } from '@tools/valorant/components/theme/themeProvider'
 
 export const metadata: Metadata = {
   title: 'Create T3 App',
@@ -16,7 +17,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
       <body className="flex flex-col justify-center items-center  h-full w-full ">
-        <TRPCReactProvider>{children}</TRPCReactProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <TRPCReactProvider>{children}</TRPCReactProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -7,7 +7,7 @@ export default async function Home() {
 
   return (
     <HydrateClient>
-      <header className="flex justify-center w-full h-12 border-b border-red-400">
+      <header className="flex justify-center w-full h-12 border-b  border-red-400 dark:border-b-violet-500">
         <Header />
       </header>
       <main>
